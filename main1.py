@@ -7,7 +7,7 @@ import requests
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
-NEWS_API_KEY = "0e6c3caef60a4b5c8ef93ff9c04b8066"
+NEWS_API_KEY = "YOUR_NEWS_API_KEY"  #ENTER YOUR NEWS API KEY HERE BEFORE USING 
 
 def speak(text):
     print("Jarvis:", text)
@@ -108,3 +108,4 @@ if __name__ == "__main__":
 
     if failure_count >= max_failures:
         speak("Too many failed attempts. Exiting.")
+
